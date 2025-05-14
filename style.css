@@ -28,10 +28,22 @@ nav{
     background-color: #010066;
     color: #ffffff;
     padding: 1rem 2rem;
+    position: fixed;
+    z-index: 1000;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo-group{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 .logo{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -58,8 +70,8 @@ nav{
     position: relative;
     background-image: url("assets/masa.jpeg");
     background-size: cover;
-    background-position: center;
-    height: 500px;
+    background-position: center 20%;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,6 +176,7 @@ nav{
 
 /* Meet the Team*/
 .team-section{
+    scroll-margin-top: 80px;
     text-align: center;
     padding: 3rem 1rem;
     background-color: #f9f9f9;
@@ -212,10 +225,15 @@ nav{
     color: #555;
 }
 
-/*gallery*/
+/*bulletin board*/
 .interactive-map {
+    scroll-margin-top: 80px;
     text-align: center;
     padding: 2rem 1rem;
+}
+
+.interactive-map h2{
+    font-size: 2rem;
 }
 
 .map-container{
@@ -268,7 +286,38 @@ nav{
     display: block;
     z-index: 999;
 }
-  
+
+/* FAQ */
+.faq-section{
+    scroll-margin-top: 80px;
+    padding: 2rem 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-section h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.faq-item{
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+}
+
+.faq-item summary{
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.faq-item p{
+    margin-top: 0.5rem;
+}
 
 .learn-more-section{
     gap: 2rem;
