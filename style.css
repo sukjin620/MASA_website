@@ -128,6 +128,7 @@ nav{
 
 /*About Us*/
 .section-wrapper{
+    scroll-margin-top: 80px;
     padding: 3rem 2rem;
     background-color: #f9f9f9;
 }
