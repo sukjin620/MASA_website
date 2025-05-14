@@ -60,7 +60,7 @@ nav{
   
 .apply-button{
     background-color: #FFCC00;
-    color: #010066;
+    color: #010066 !important;
     padding: 0.4rem 0.8rem;
     border-radius: 5px;
     font-weight: bold;
