@@ -113,7 +113,8 @@ nav{
 .primary-btn:hover{
     background-color: #a60000;
 }
-  
+
+/*About Us*/
 .section-wrapper{
     padding: 3rem 2rem;
     background-color: #f9f9f9;
@@ -129,12 +130,16 @@ nav{
   
 .about-text{
     padding-bottom: 1rem;
+}
+
+#first-child, #second-child{
     border-bottom: 1px solid #ccc;
 }
 
-.about-text:last-child{
-    border-bottom: none; 
+.about-text button{
+    margin-top: 1rem;
 }
+
 
 .about-text h2{
     font-size: 2rem;
@@ -148,6 +153,122 @@ nav{
     font-size: 1rem;
     color: #333;
 }
+
+.container{
+    display: flex;
+    gap: 2rem; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+/* Meet the Team*/
+.team-section{
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+}
+  
+.team-section h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member{
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover{
+    transform: translateY(-5px);
+}
+
+.team-member img{
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 150px;
+    margin: 0 auto 1rem;
+}
+
+.team-member h3{
+    font-size: 1.2rem;
+}
+
+.team-member p{
+    margin: 0;
+    color: #555;
+}
+
+/*gallery*/
+.interactive-map {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.map-container{
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.bulletin-bg{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.map-pin{
+    position: absolute;
+    transform: translate(-50%, -100%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.map-pin img{
+    width: 200px;
+    height: auto;
+}
+
+.popup{
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    background: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 250px;
+    z-index: 999;
+}
+
+.popup img{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.map-pin:hover .popup{
+    display: block;
+    z-index: 999;
+}
+  
 
 .learn-more-section{
     gap: 2rem;
@@ -164,7 +285,7 @@ nav{
 
 .learn-more-section p{
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 footer{

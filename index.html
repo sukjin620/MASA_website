@@ -15,9 +15,9 @@
             <div class="logo" href="index.html">Malaysian Student Association</div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="team.html">Team</a>
-                <a href="faq.html">FAQ</a>
+                <a href=#team>Team</a>
+                <a href=#events>Events</a>
+                <a href=#faq>FAQ</a>
                 <a href="apply.html" class="apply-button">Apply</a>
             </div>
         </nav>
@@ -43,56 +43,148 @@
 
         <div id="about" class="section-wrapper">
             <section class="about-section">
-                <div class="about-text">
+                <div class="about-text" id="first-child">
                     <h2>Who we are</h1>
                     <p> We are a close-knit group of Malaysian students at the University of Washington, Seattle, 
                         brought together by a shared heritage, culture, and a passion for supporting one another 
                         in our academic and personal journeys.
                     </p>
+                    <a href=#team>
+                        <button class="primary-btn">Meet The Team</button>
+                    </a>
                 </div>
 
-                <div class="about-text">
+                <div class="about-text" id="second-child">
                     <h2>What we do</h1>
                     <p> We organize cultural celebrations, social gatherings, and collaborative events that 
                         connect Malaysian students with one another and with the wider UW community. 
                         From festive potlucks to community outreach, we create spaces where friendships flourish 
                         and culture thrives.
                     </p>
+                    <a href=#events>
+                        <button class="primary-btn">See Past Events</button>
+                    </a>
                 </div>
 
-                <div class="about-text">
-                    <h2>Mission</h1>
-                    <p> Our mission is to build a strong sense of belonging for Malaysian students at UW by 
-                        fostering inclusive connections, celebrating our roots, and creating a supportive environment for all.
-                    </p>
-                </div>
-
-                <div class="about-text">
-                    <h2>Vision</h1>
-                    <p> We envision a vibrant and welcoming Malaysian community at UW, where every member 
-                        feels valued, included, and empowered to grow both individually and collectively. 
-                    </p>
-                </div>
-
-            </section>
+                <div class="container">
+                    <div class="about-text">
+                        <h2>Mission</h1>
+                        <p> Our mission is to build a strong sense of belonging for Malaysian students at UW by 
+                            fostering inclusive connections, celebrating our roots, and creating a supportive environment for all.
+                        </p>
+                    </div>
     
-            <!-- <section id="gallery" class="photo-gallery">
-                <h2>What I do in my free time.</h2>
-                <div class="gallery-scroll">
-                    <div class="photo-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="/assets/surfing.jpeg" alt="surfing picture">
-                            </div>
-                            <div class="card-back">
-                                <p>My new hobby! Recently learned <b>surfing</b> in San Diego and immediately fell in love with this water sports🌊</p>
-                            </div>
-                        </div>
-                    </div>        
+                    <div class="about-text">
+                        <h2>Vision</h1>
+                        <p> We envision a vibrant and welcoming Malaysian community at UW, where every member 
+                            feels valued, included, and empowered to grow both individually and collectively. 
+                        </p>
+                    </div>
                 </div>
-            </section> -->
+            </section>
 
+            <section id="team" class="team-section">
+                <h2>Meet the Team</h2>
+                <div class="team-container">
+                    <div class="team-member">
+                        <img src="assets/abu.jpeg" alt="Photo of Abu">
+                        <h3>Abu Naim</h3>
+                        <h4>President</h4>
+                        <p>Major: Political Economy</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/sofi.jpeg" alt="Photo of Sofi">
+                        <h3>Sofi Musfirah</h3>
+                        <h4>Vice President</h4>
+                        <p>Major: Mechanical Engineering</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/sharif.png" alt="Photo of Sharif">
+                        <h3>Sharif Naufal</h3>
+                        <h4>Scretary</h4>
+                        <p>Major: Mechanical Engineering</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/hana.jpeg" alt="Photo of Hana">
+                        <h3>Hana Fariha</h3>
+                        <h4>Treasurer</h4>
+                        <p>Major: Finance</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/sukjin.jpeg" alt="Photo of Suk Jin">
+                        <h3>Suk Jin Chung</h3>
+                        <h4>Logistics Chair</h4>
+                        <p>Major: Finance</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/taufiq.jpeg" alt="Photo of Taufiq">
+                        <h3>Taufiq Bahari</h3>
+                        <h4>Public Relation</h4>
+                        <p>Major: Political Economy</p>
+                    </div>
+                </div>
+            </section>
+              
+    
+            <section id="events" class="interactive-map">
+                <h2>Event Highlights on Campus</h2>
+                <div class="map-container">
+                    <img src="assets/board.jpg" alt="Bulletin board background" class="bulletin-bg">
 
+                    <div class="map-pin" style="top: 85%; left: 70%;">
+                        <img src="assets/deepavali_flyer.png" alt="Deepavali event flyer">
+                        <div class="popup">
+                            <img src="assets/deepavali.png" alt="Photo of deepavali event">
+                            <h4>Deepavali Event</h4>
+                            <p>We did a kolam crafting competition in collaboration with Singapore Student Association.
+                                The winner got a $50 gift card! 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="map-pin" style="top: 50%; left: 75%;">
+                        <img src="assets/fundraiser.png" alt="MASA Fundraising Flyer">
+                        <div class="popup">
+                            <img src="assets/fundraiser_tabling.jpeg" alt="Photo of fundraiser tabling">
+                            <h4>MASA Fundraising</h4>
+                            <p>First ever fundraiser by MASA! We sold homemade Iced Lemon Tea and of course the 
+                                classic Malaysian drink, Teh Tarik, which is essentially milk tea but in Malaysian way.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="map-pin" style="top: 55%; left: 50%;">
+                        <img src="assets/cny.png" alt="Chinese New Year flyer">
+                            <div class="popup">
+                            <img src="assets/cny_pic.png" alt="Photo of all MASA members during CNY celebration">
+                            <h4>CNY celebration</h4>
+                            <p>Tons of fun activities were held during the event, such as Yee Sang tossing, paper cutting, dumplings, 
+                                and more.</p>
+                        </div>
+                    </div>
+              
+                    <div class="map-pin" style="top: 83%; left: 30%;">
+                        <img src="assets/raya_potluck.png" alt="Raya potluck flyer">
+                        <div class="popup">
+                            <img src="assets/raya.jpeg" alt="Photo of potluck event">
+                            <h4>Raya Potluck</h4>
+                            <p>We celebrated Eid Mubarak (Hari Raya) with our beloved members under the cherry blossom!
+                                Everyone brought their favourite Malaysian dish during the potluck.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="map-pin" style="top: 45%; left: 20%;">
+                    <img src="assets/gameday.png" alt="Game day flyer">
+                        <div class="popup">
+                            <img src="assets/masa.jpeg" alt="Photo of all MASA members during game day">
+                            <h4>Game Day</h4>
+                            <p>We kicked off the fall quarter with a game day to help our members on getting to know each other!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+              
             <section class="learn-more-section">
                 <h3>Ready to join us?</h3>
                 <p>We're always excited to welcome new members! Apply now and become part of our MASA family.</p>
